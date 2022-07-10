@@ -366,6 +366,29 @@ p {
   flex-basis: 32%;
 }
 
+.blog-right h3 {
+  background: #24f8c7;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.blog-right div:hover {
+  color: #24f8c7;
+  cursor: pointer;
+}
+
 
 
 
