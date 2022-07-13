@@ -387,6 +387,74 @@ p {
 
 
 
+
+
+
+
+
+
+/* Courses page */
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.PageBlock {
+    position: relative;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+.verticalLine {
+    widtH: 2px;
+    height: 100px;
+    background: #24f8c7;
+    margin: 0 auto 40px;
+}
+
+.Clear {
+    clear: both;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 800;
+    margin: 15px 0;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #24f8c7;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+
+/* End of courses page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* BLOG PAGE */
 
 .blog-content {
