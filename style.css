@@ -364,21 +364,21 @@ ul{
 /* CONTACT PAGE */
 
 .contact {
-  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #112d42;
+  background-color: #00999c;
 }
 
-section::before {
+.contact::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: white;
+  background-color: blue;
 }
 
 .contact .con-contain {
@@ -398,9 +398,10 @@ section::before {
   z-index: 1;
   padding: 40px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
 
 .contact .con-contain .contact-info h2 {
@@ -411,7 +412,7 @@ section::before {
 .contact .con-contain .contact-info .info {
   position: relative;
   margin: 20px 0;
-  
+
 }
 
 .contact .con-contain .contact-info .info li {
@@ -420,9 +421,23 @@ section::before {
   display: flex;
   margin: 20px 0;
   cursor: pointer;
-  align-items: flex-start;
+  align-items: flex-start; 
 }
 
+
+
+
+.con-contain .contact-form {
+  position: absolute;
+  padding: 70px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15);
+
+}
 
 /* End of CONTACT PAGE */
   
