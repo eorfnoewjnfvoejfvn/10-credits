@@ -425,8 +425,6 @@ ul{
 }
 
 
-
-
 .con-contain .contact-form {
   position: absolute;
   padding: 70px 50px;
@@ -438,6 +436,214 @@ ul{
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.16);
 
 }
+
+.con-contain .contact-info h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.con-contain .contact-info ul.info {
+  position: relative;
+  margin: 20px 0;
+}
+
+.con-contain .contact-info ul.info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+
+}
+
+.con-contain .contact-info ul.info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+.con-contain .contact-info ul.info li span:nth-child(1) img {
+  max-width: 100%;
+  filter: invert(1);
+
+}
+
+.con-contain .contact-info ul.info li span:nth-child(2) {
+  color: white;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.con-contain .contact-form {
+  position: absolute;
+  padding: 70px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: calc(100%-150);
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+.con-contain .contact-form h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.con-contain .contact-form .form-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.con-contain .contact-form .form-box .input-box {
+  position: relative;
+  margin: 35px;
+ }
+
+ .con-contain .contact-form .form-box .input-box.w50 {
+  width: 47%;
+
+ }
+
+.con-contain .contact-form .form-box .input-box.w100 {
+  width: 100%;
+}
+
+.con-contain .contact-form .form-box .input-box input, 
+.con-contain .contact-form .form-box .input-box textarea {
+  width: 100;
+  resize: none;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+
+.con-contain .contact-form .form-box .input-box textarea {
+  height: 120px;
+}
+
+.con-contain .contact-form .form-box .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  font-size: 300;
+  transition: 0.3s;
+}
+
+.con-contain .contact-form .form-box .input-box input:focus ~ span, 
+.con-contain .contact-form .form-box .input-box input:valid ~ span, 
+.con-contain .contact-form .form-box .input-box textarea:focus ~ span,
+.con-contain .contact-form .form-box .input-box textarea:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #333;
+
+}
+
+.con-contain .contact-form .form-box .input-box input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+  
+}
+
+.con-contain .contact-form .form-box .input-box input[type="submit"]:hover {
+  background-color: #00999c;
+}
+
+/* Responsive */
+
+@media (max-width :1200px) {
+
+  .con-contain {
+    width: 90%;
+    min-width: auto;
+    margin: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-info {
+    top: 0;
+    height: 500px;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .con-contain .contact-form {
+    position: relative;
+    width: calc(100%-350px);
+    padding-left: 0;
+    margin-left: 0;
+    padding: 40px;
+    height: 550px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    background-color: #fff38e;
+  }
+
+  .contact::before {
+    display: none;
+  }
+
+  .con-contain {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .con-contain .contact-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .con-contain .contact-info {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .con-contain .contact-form {
+    padding: 25px;
+  }
+
+  .con-contain .contact-info {
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .con-contain .contact-form .form-box .input-box.w50 {
+    width: 100%;
+  }
+
+}
+
+
+  
+
 
 /* End of CONTACT PAGE */
   
