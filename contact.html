@@ -8,74 +8,110 @@
     <title>Thisanka.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <section class="contact">
-        <div class="con-contain">
-            <div class="contact-info">
-                <div>
-                    <h2>Contact info</h2>
-                    <ul class="info">
 
-                        <li>
-                            <span><img src="images/location.png" alt="location pin icon"></span>
-                            <span>47-49 Red Oaks Drive, <br>
-                                Frankton Queenstown, <br>
-                                9300</span>
-                        </li>
-
-                        <li>
-                            <span><img src="images/mail.png" alt="envolpe icon"></span>
-                            <span>19tweeraddana@wakatipu.school.nz</span>
-                        </li>
-
-                        <li>
-                            <span><img src="images/call.png" alt="phone icon"></span>
-                            <span>03 4427370</span>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Navigation -->
+    <header>
+      <div class="header container">
+        <nav>
+          <div class="brand">
+            <a href="#hero">
+              <h1>Thisanka<span>.com</span></h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
             </div>
-            
-            <div class="contact-form">
-                <h2>Send a message</h2>
-                <div class="form-box">
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Service">Services</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="contact.html" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End of navigation -->
 
-                    <div class="input-box w50">
-                        <input type="text" name="" required>
-                        <span>First Name</span>
-                    </div>
 
-                    <div class="input-box w50">
-                        <input type="text" name="" required>
-                        <span>Last Name</span>
-                    </div>
 
-                    <div class="input-box w50">
-                        <input type="text" name="" required>
-                        <span>Email</span>
-                    </div>
+    <div class=" section-gap"></div>
+      <div class="wrapper">
+        <h4 class="sub-title text-center">Find us</h4>
+        <h3 class="global-title text-center">Contact us</h3>
+        <div class="d-grid contact-view">
+          <div class="cont-details">
 
-                    <div class="input-box w50">
-                        <input type="text" name="" required>
-                        <span>Phone Number</span>
-                    </div>
 
-                    <div class="input-box w100">
-                        <textarea type="text" name="" required></textarea>
-                        <span>Write your message here...</span>
-                    </div>
+            <div class="cont-top">
 
-                    <div class="input-box w100">
-                        <input type="submit" value="send"> 
-                    </div>
+              <div class="cont-left text-center">
+                <span class="fa fa-phone text-primary"></span>
+              </div>
 
-                </div>
+              <div class="cont-right">
+                <h6>Call Us</h6>
+                <p><a href="#">+123 45 67 89</a></p>
+              </div>
+
             </div>
+
+
+            <div class="cont-top margin-up">
+
+              <div class="cont-left text-center">
+                <span class="fa fa-envelope-o text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Email Us</h6>
+                <p><a href="mailto:example@mail.com" class="mail">example@mail.com</a></p>
+              </div>
+              
+            </div>
+
+
+            <div class="cont-top margin-up">
+              <div class="cont-left text-center">
+                <span class="fa fa-map-marker text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Address</h6>
+                <p>Address here, Alwar Rajasthan India.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="map-content">
+            <form action="#" method="post">
+              <div class="twice-two">
+                <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
+                <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
+                  required="">
+              </div>
+
+              <div class="twice">
+                <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject"
+                  required="">
+              </div>
+
+              <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
+                required=""></textarea>
+              <button type="submit" class="btn btn-contact">Send Message</button>
+            </form>
+          </div>
 
         </div>
-    </section>
+      </div>
 </body>
 
 </html>

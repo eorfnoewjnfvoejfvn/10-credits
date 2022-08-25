@@ -2,9 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous">
     <title>Thisanka.com</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +35,7 @@
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#projects" data-after="Projects">BLOG</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="contact.html" data-after="Contact">Contact</a></li>
           </ul>
@@ -37,115 +45,422 @@
   </header>
   <!-- End of navigation -->
 
-  <section class="section about" id="about">
-    <div class="container">
-
-      <figure class="about-banner">
-        <img src="images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
-          class="w-100 banner-animation">
-      </figure>
-
-      <div class="about-content">
-
-        <h2 class="h2 section-title underline">Why Our Agency</h2>
-
-        <p class="about-text">
-          In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec
-          volutpat metus
-          lacinia risus accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit amet magna tempus
-          hendrerit ut a odio.
-        </p>
-
-        <p class="about-text">
-          Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante,
-          vehicula condimentum
-          arcu.
-        </p>
-
-        <ul class="stats-list">
-
-          <li class="stats-card">
-            <p class="h3 stats-title">9875</p>
-
-            <p class="stats-text">Satisfied Clients</p>
-          </li>
-
-          <li class="stats-card">
-            <p class="h3 stats-title">7894</p>
-
-            <p class="stats-text">Project Lunched</p>
-          </li>
-
-          <li class="stats-card">
-            <p class="h3 stats-title">65</p>
-
-            <p class="stats-text">Years Completed</p>
-          </li>
-
-        </ul>
-
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="flex-row container">
+        <div class="hero-content">
+          <h2>
+            We provide <br /><span><u>solutions</u></span
+            ><br />for your business!
+          </h2>
+          <div class="call-to-action">
+            <a href="#contact-us" class="btn">Get Started</a>
+          </div>
+        </div>
+        <img src="images/intro-img.svg" alt="" />
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- About us -->
+    <section class="about about-1" id="about">
+      <div class="container">
+        <h2>About us</h2>
+        <div class="flex-row">
+          <div class="left">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus libero facere repellendus ipsum
+              distinctio velit voluptatibus. Amet quam eligendi impedit cum, nam id inventore quibusdam neque eos, quae
+              voluptatibus qui.
+            </p>
+            <div class="flex-row about-features">
+              <i class="fas fa-bullhorn"></i>
+              <div class="info">
+                <h4>Title #1</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid ipsam. Illum soluta nam
+                  cum?
+                </p>
+              </div>
+            </div>
+            <div class="flex-row about-features">
+              <i class="fas fa-balance-scale"></i>
+              <div class="info">
+                <h4>Title #2</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid ipsam. Illum soluta nam
+                  cum?
+                </p>
+              </div>
+            </div>
+            <div class="flex-row about-features">
+              <i class="fas fa-globe"></i>
+              <div class="info">
+                <h4>Title #3</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid ipsam. Illum soluta nam
+                  cum?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="images/about-img.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- About us #2 -->
+    <section class="about about-2">
+      <div class="container">
+        <div class="flex-row">
+          <div class="left">
+            <img src="images/about-extra-1.svg" alt="" />
+          </div>
+          <div class="right">
+            <h3>About us secondary content title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime repudiandae praesentium? Incidunt
+              delectus molestiae ipsum? Deleniti in rem sequi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam harum inventore impedit voluptatum
+              fugit eos. Qui unde soluta quis voluptatem?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- About us # 3 -->
+    <section class="about about-3">
+      <div class="container">
+        <div class="flex-row">
+          <div class="left">
+            <h3>About us secondary content title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas porro voluptatum saepe molestiae
+              ullam ut nobis assumenda sapiente repudiandae.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore dolorum labore accusantium
+              ducimus nesciunt quos architecto id dolorem eum?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos illum odit ratione cum similique magnam
+              atque culpa consequuntur iusto!
+            </p>
+          </div>
+          <div class="right">
+            <img src="images/about-extra-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="flex-row">
+            <i class="fas fa-mobile-alt pink-text"></i>
+            <div class="right">
+              <h3>Digital Marketing</h3>
+              <p>
+                Digital Marketing means everything needed for a traditional advertising campaign, and a lot more. We
+                have the vast array of intelligence available to help build target audiences.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <i class="fas fa-globe-americas yellow-text"></i>
+            <div class="right">
+              <h3>Branding</h3>
+              <p>
+                Branding is an essential component of successful market. At its core branding means effectively
+                identifying your differentiators and value proposition.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <i class="far fa-window-maximize teal-text"></i>
+            <div class="right">
+              <h3>Web Design</h3>
+              <p>
+                Colors, typography, imagery and message are hallmarks of good communication. Successful web design
+                demands all of this, plus simplicity of navigation, load time, functionality, and usability.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <i class="fas fa-camera-retro green-text"></i>
+            <div class="right">
+              <h3>Photo & Videography</h3>
+              <p>
+                Creating a lasting visual impression on a potential customer usually happens with an image first. Be it
+                still photography or videography, motion graphics or a compelling combination of all the above.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <i class="fas fa-pencil-ruler limeGreen-text"></i>
+            <div class="right">
+              <h3>Creative Design</h3>
+              <p>
+                Skillful use and understanding of type, color, image and sound creates a visual solution that
+                communicates a compelling message with a unqiue & modern design for each client.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <i class="fas fa-tablet-alt blue-text"></i>
+            <div class="right">
+              <h3>Interactive Solutions</h3>
+              <p>
+                Engagement is a highly valued marketing success metric. Augmented and virtual reality, QR codes, kiosks
+                and interactive displays are only some of the ways we have built interactivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Why -->
+    <section class="why">
+      <div class="container">
+        <h2>Why choose us?</h2>
+        <div class="flex-row write-up">
+          <div class="col">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Design Forward</h3>
+            <p>
+              Good enough isn't good enough. Top level marketing communications requires state-of-the-art equipment,
+              extensive experience, efficient execution and, most importantly, great talent?
+            </p>
+            <span>Read more</span>
+          </div>
+          <div class="col">
+            <i class="fas fa-signal"></i>
+            <h3>Data Driven Decisions</h3>
+            <p>
+              Demographics, psychographics, audience analysis, ratings & efficiency information, applied psychology,
+              archetypes, KPIs-- better information builds the platform upon which better, truer and more compelling
+              brand stories can be told.
+            </p>
+            <span>Read more</span>
+          </div>
+          <div class="col">
+            <i class="fas fa-search"></i>
+            <h3>Meticulously Efficient</h3>
+            <p>
+              A culture of quality intersecting with precision workflow management systems, rigorous oversight and
+              tested methodology to deliver desired outcomes.
+            </p>
+            <span>Read more</span>
+          </div>
+        </div>
+        <div class="flex-row analytics">
+          <div class="col">
+            <span class="number">274</span>
+            <span class="title">Clients</span>
+          </div>
+          <div class="col">
+            <span class="number">421</span>
+            <span class="title">Projects</span>
+          </div>
+          <div class="col">
+            <span class="number">1,364</span>
+            <span class="title">Hours of Support</span>
+          </div>
+          <div class="col">
+            <span class="number">18</span>
+            <span class="title">Hard Workers</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+      <div class="container">
+        <h2>Our Portfolio</h2>
+        <div class="grid">
+          <div class="col photo-1">
+            <img src="images/portfolio/app1.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-2">
+            <img src="images/portfolio/web3.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-3">
+            <img src="images/portfolio/app2.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-4">
+            <img src="images/portfolio/web2.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-5">
+            <img src="images/portfolio/card2.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-6">
+            <img src="images/portfolio/app3.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-7">
+            <img src="images/portfolio/web1.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-8">
+            <img src="images/portfolio/card3.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col photo-9">
+            <img src="images/portfolio/card1.jpg" alt="" />
+            <div class="bg"></div>
+            <div class="content">
+              <p>App 1</p>
+              <p>App description</p>
+              <div>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Clients -->
+    <section class="clients">
+      <div class="container">
+        <h2>Our Clients</h2>
+        <div class="flex-row">
+          <div class="col">
+            <img src="images/clients/client-1.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-2.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-3.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-4.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-5.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-6.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-7.png" alt="" />
+          </div>
+          <div class="col">
+            <img src="images/clients/client-8.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <ul class="flex-row">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        <ul class="flex-row">
+          <li>
+            <i class="fab fa-youtube"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fab fa-facebook"></i>
+          </li>
+          <li>
+            <i class="fab fa-dribbble"></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
 </body>
 
 </html>
