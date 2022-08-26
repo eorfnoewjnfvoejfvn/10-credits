@@ -4,62 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
-    rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous">
-    <title>Thisanka.com</title>
-    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Thisanka.com</title>
 </head>
 
 <body>
 
-  <!-- Navigation -->
+<!-- Navigation and hero section -->
   <header>
-    <div class="header container">
-      <nav>
-        <div class="brand">
-          <a href="#hero">
-            <h1>Thisanka<span>.com</span></h1>
-          </a>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html">Thisanka<span class="com">.com</span></a>
         </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
           </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">BLOG</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="contact.html" data-after="Contact">Contact</a></li>
-          </ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><div class="button"><a href="contact.html">Contact</a></div></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
-      </nav>
-    </div>
-  </header>
-  <!-- End of navigation -->
-
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="flex-row container">
-        <div class="hero-content">
-          <h2>
-            We provide <br /><span><u>solutions</u></span
-            ><br />for your business!
-          </h2>
-          <div class="call-to-action">
-            <a href="#contact-us" class="btn">Get Started</a>
-          </div>
-        </div>
-        <img src="images/intro-img.svg" alt="" />
       </div>
-    </section>
+    </nav>
+
+    <div class="banner-text">
+      <h1>Invested in <span>you</span></h1>
+      <p>Thisanka.com is a specialist investment firm who invest in New Zealand, its businesses and its people, and are ready to work for you.</p>
+      <div class="button-head"><a href="https://www.investing.com/">Learn more</a></div>
+  </div>
+
+  </header>
+
+
+
+      
 
     <!-- About us -->
     <section class="about about-1" id="about">
@@ -68,37 +53,34 @@
         <div class="flex-row">
           <div class="left">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus libero facere repellendus ipsum
-              distinctio velit voluptatibus. Amet quam eligendi impedit cum, nam id inventore quibusdam neque eos, quae
-              voluptatibus qui.
+              We’re dedicated to growing the wealth of investors and the overall prosperity of the New Zealand economy.
+              We’re also a majority Kiwi-owned company and our employees are owners in the business too.
             </p>
             <div class="flex-row about-features">
               <i class="fas fa-bullhorn"></i>
               <div class="info">
-                <h4>Title #1</h4>
+                <h4>Switch in minutes</h4>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid ipsam. Illum soluta nam
-                  cum?
+                  Goals are important to help you establish the investment solution you need.
                 </p>
               </div>
             </div>
             <div class="flex-row about-features">
               <i class="fas fa-balance-scale"></i>
               <div class="info">
-                <h4>Title #2</h4>
+                <h4>Your success is our success.</h4>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid ipsam. Illum soluta nam
-                  cum?
+                  Given the strong long-term returns we’ve helped to generate for our investors,
+                  it’s no surprise we invest in our funds too.
                 </p>
               </div>
             </div>
             <div class="flex-row about-features">
               <i class="fas fa-globe"></i>
               <div class="info">
-                <h4>Title #3</h4>
+                <h4>Ready to Invest?</h4>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid ipsam. Illum soluta nam
-                  cum?
+                  Open an Investment Funds account and start your journey here.
                 </p>
               </div>
             </div>
@@ -118,14 +100,14 @@
             <img src="images/about-extra-1.svg" alt="" />
           </div>
           <div class="right">
-            <h3>About us secondary content title</h3>
+            <h3>Why Thisanka.com Investment Funds?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime repudiandae praesentium? Incidunt
-              delectus molestiae ipsum? Deleniti in rem sequi.
+              We take an active approach to investing. We constantly re-evaluate investments to achieve the best results for our clients. 
+              Our ability to move quickly means we can take advantage of opportunities as they arise and manage risk along the way.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam harum inventore impedit voluptatum
-              fugit eos. Qui unde soluta quis voluptatem?
+              We have proven expertise on our side. We have one of the largest and most globally experienced investment teams in New Zealand. 
+              Having this expertise applied to your savings can give you the edge you need to reach
             </p>
           </div>
         </div>
@@ -137,18 +119,20 @@
       <div class="container">
         <div class="flex-row">
           <div class="left">
-            <h3>About us secondary content title</h3>
+            <h3>Our Private Equity Fund</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas porro voluptatum saepe molestiae
-              ullam ut nobis assumenda sapiente repudiandae.
+              Private equity investing is suitable for wholesale investors and eligible investors with a 
+              higher risk appetite who are willing to forgo liquidity in the quest for potentially higher returns.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore dolorum labore accusantium
-              ducimus nesciunt quos architecto id dolorem eum?
+              Thisanka.com has been successfully investing in private companies since 2011. 
+              These investments have contributed positively to our Active Growth Fund
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos illum odit ratione cum similique magnam
-              atque culpa consequuntur iusto!
+              For investors with $500,000 or more to invest our Private Wealth team is here to help you meet your investment goals,
+               offering a range of services to suit different client needs. 
+              From in depth discussions that help you select directly from our fund range, 
+              to advice on a personalised basis with ongoing investment management of your portfolio of funds.
             </p>
           </div>
           <div class="right">
@@ -174,7 +158,7 @@
             </div>
           </div>
           <div class="flex-row">
-            <i class="fas fa-globe-americas yellow-text"></i>
+            <i class="fas fa-globe-americas pink-text"></i>
             <div class="right">
               <h3>Branding</h3>
               <p>
@@ -184,7 +168,7 @@
             </div>
           </div>
           <div class="flex-row">
-            <i class="far fa-window-maximize teal-text"></i>
+            <i class="far fa-window-maximize pink-text"></i>
             <div class="right">
               <h3>Web Design</h3>
               <p>
@@ -194,7 +178,7 @@
             </div>
           </div>
           <div class="flex-row">
-            <i class="fas fa-camera-retro green-text"></i>
+            <i class="fas fa-camera-retro pink-text"></i>
             <div class="right">
               <h3>Photo & Videography</h3>
               <p>
@@ -204,7 +188,7 @@
             </div>
           </div>
           <div class="flex-row">
-            <i class="fas fa-pencil-ruler limeGreen-text"></i>
+            <i class="fas fa-pencil-ruler pink-text"></i>
             <div class="right">
               <h3>Creative Design</h3>
               <p>
@@ -214,7 +198,7 @@
             </div>
           </div>
           <div class="flex-row">
-            <i class="fas fa-tablet-alt blue-text"></i>
+            <i class="fas fa-tablet-alt pink-text"></i>
             <div class="right">
               <h3>Interactive Solutions</h3>
               <p>
@@ -291,108 +275,72 @@
             <img src="images/portfolio/app1.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 1</p>
+              <p>August 2020</p>
             </div>
           </div>
           <div class="col photo-2">
             <img src="images/portfolio/web3.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 2</p>
+              <p>June 2014</p>
             </div>
           </div>
           <div class="col photo-3">
             <img src="images/portfolio/app2.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 3</p>
+              <p>April 2022</p>
             </div>
           </div>
           <div class="col photo-4">
             <img src="images/portfolio/web2.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 4</p>
+              <p>March 2016</p>
             </div>
           </div>
           <div class="col photo-5">
             <img src="images/portfolio/card2.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 5</p>
+              <p>December 2012</p>
             </div>
           </div>
           <div class="col photo-6">
             <img src="images/portfolio/app3.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 6</p>
+              <p>October 2015</p>
             </div>
           </div>
           <div class="col photo-7">
             <img src="images/portfolio/web1.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 7</p>
+              <p>January 2022</p>
             </div>
           </div>
           <div class="col photo-8">
             <img src="images/portfolio/card3.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 8</p>
+              <p>March 2012</p>
             </div>
           </div>
           <div class="col photo-9">
             <img src="images/portfolio/card1.jpg" alt="" />
             <div class="bg"></div>
             <div class="content">
-              <p>App 1</p>
-              <p>App description</p>
-              <div>
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
+              <p>Project 9</p>
+              <p>May 2021</p>
             </div>
           </div>
         </div>
@@ -436,32 +384,35 @@
     <footer>
       <div class="container">
         <ul class="flex-row">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <ul class="flex-row">
           <li>
-            <i class="fab fa-youtube"></i>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
           </li>
+
           <li>
-            <i class="fab fa-twitter"></i>
+            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
           </li>
+
           <li>
-            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
           </li>
+
           <li>
-            <i class="fab fa-facebook"></i>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
           </li>
+
           <li>
-            <i class="fab fa-dribbble"></i>
+            <a href="https://nz.linkedin.com/"><i class="fab fa-linkedin"></i></a>
           </li>
         </ul>
       </div>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 
 </html>
 
